@@ -60,7 +60,7 @@ conts password = inputPasswordElemant.value;
 }else {
 
   /* Comment : namun jika tidak sesuai maka akan menampilkan informasi bahwa input salah. */ 
-  showPopUp ();
+  showPopUp();
 
 
 }
