@@ -3,21 +3,21 @@
 * Membuat variabel LoginFormElement untuk tampilan Form. 
 * constant {HTMLElement}
 */ 
-const LoginFormElement = document.querySelector('Loginform');
+const LoginFormElement = document.querySelector('#Loginform');
  
 
 /**
 * Membuat variabel inputEmailElemetn untuk tampilan input email.
 * constant {HTMLElement}
 */
-const LoginEmailmElement = document.querySelector('LoginEmail');
+const LoginEmailmElement = document.querySelector('#inputEmail');
 
 
 /**
 * Membuat variabel inputPasswordElemetn untuk tampilan input password.
 * constant {HTMLElement}
 */
-const LoginPasswordmElement = document.querySelector('LoginPassword');
+const LoginPasswordmElement = document.querySelector('#inputPassword');
 
 
 /**
