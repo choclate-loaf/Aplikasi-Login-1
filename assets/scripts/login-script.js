@@ -1,35 +1,35 @@
 /** @module Login-Script */
 /**
 * Membuat variabel LoginFormElement untuk tampilan Form. 
-* constant {HTMLElement}
+* @constant {HTMLElement}
 */ 
 const LoginFormElement = document.querySelector('#Loginform');
  
 
 /**
 * Membuat variabel inputEmailElemetn untuk tampilan input email.
-* constant {HTMLElement}
+* @constant {HTMLElement}
 */
-const LoginEmailmElement = document.querySelector('#inputEmail');
+const inputEmailmElement = document.querySelector('#inputEmail');
 
 
 /**
 * Membuat variabel inputPasswordElemetn untuk tampilan input password.
-* constant {HTMLElement}
+* @constant {HTMLElement}
 */
-const LoginPasswordmElement = document.querySelector('#inputPassword');
+const inputPasswordmElement = document.querySelector('#inputPassword');
 
 
 /**
 * Membuat variavel expectedEmail untuk menyimpan informasi email sementara.
-* constant {string}
+* @constant {string}
 */
 const exceptedEmail = 'admin@dicoding.com';
 
 
 /**
 * Membuat variavel expectedPassword untuk menyimpan informasi password sementara.
-* constant {string}
+* @constant {string}
 */
 const exceptedPassword = 'superpassword';
 
@@ -40,13 +40,13 @@ loginFormElement.addEventListener('submit', function(event) {
 
 /**
 * membuat variabel email untuk menyimpan nilai email yang didapatkan saat bottom ditekan. 
-* constant {string}
+* @constant {string}
 */
-conts email = inputEmailElemant.value;
+ conts email = inputEmailElemant.value;
 
 /**
 * membuat variabel email untuk menyimpan nilai password yang didapatkan saat bottom ditekan. 
-* constant {string}
+* @constant {string}
 */
 conts password = inputPasswordElemant.value;
 
