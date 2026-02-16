@@ -1,69 +1,66 @@
 /** @module Login-Script */
-/**
-* Membuat variabel LoginFormElement untuk tampilan Form. 
+/** 
+* Membuat variabel loginFormElement untuk tampilan form.
 * @constant {HTMLElement}
-*/ 
-const LoginFormElement = document.querySelector('#Loginform');
+*/
+const loginFormElement = document.querySelector('#loginForm');
  
-
-/**
-* Membuat variabel inputEmailElemetn untuk tampilan input email.
+ 
+/** 
+* Membuat variabel inputEmailElement untuk tampilan input email.
 * @constant {HTMLElement}
 */
-const inputEmailmElement = document.querySelector('#inputEmail');
-
-
-/**
-* Membuat variabel inputPasswordElemetn untuk tampilan input password.
+const inputEmailElement = document.querySelector('#inputEmail');
+ 
+ 
+/** 
+* Membuat variabel inputPasswordElement untuk tampilan input password.
 * @constant {HTMLElement}
 */
-const inputPasswordmElement = document.querySelector('#inputPassword');
-
-
-/**
-* Membuat variavel expectedEmail untuk menyimpan informasi email sementara.
-* @constant {string}
-*/
-const exceptedEmail = 'admin@dicoding.com';
-
-
-/**
-* Membuat variavel expectedPassword untuk menyimpan informasi password sementara.
-* @constant {string}
-*/
-const exceptedPassword = 'superpassword';
-
-
-/* Comment : Menambah aksi tekan pada botton. */
+const inputPasswordElement = document.querySelector('#inputPassword');
+ 
+ 
+/** 
+ * Membuat variabel expectedEmail untuk menyimpan informasi email sementara.
+ * @constant {string}
+ */
+const expectedEmail = 'admin@dicoding.com';
+ 
+ 
+/** 
+ * Membuat variabel expectedPassword untuk menyimpan informasi password sementara.
+ * @constant {string}
+ */
+const expectedPassword = 'superpassword';
+ 
+ 
+/* Comment :  Menambahkan aksi klik pada button. */
 loginFormElement.addEventListener('submit', function(event) {
   event.preventDefault();
-
-/**
-* membuat variabel email untuk menyimpan nilai email yang didapatkan saat bottom ditekan. 
-* @constant {string}
-*/
- conts email = inputEmailElemant.value;
-
-/**
-* membuat variabel email untuk menyimpan nilai password yang didapatkan saat bottom ditekan. 
-* @constant {string}
-*/
-conts password = inputPasswordElemant.value;
-
-
- /* comment : memastikan bahwa nilai email dan password sesuai dengan nilai yang tersimpan. 
- if (email == expectedEmail && Password == expectedPassword) { 
-
- /* Comment : jika sesuai maka program akan berpindah ke halaman home. */
- goToHome();
-
-}else {
-
-  /* Comment : namun jika tidak sesuai maka akan menampilkan informasi bahwa input salah. */ 
-  showPopUp();
-
-
-}
+  
+  /** 
+   * Membuat variabel email untuk menyimpan nilai email yang didapatkan saat button ditekan.
+   * @constant {string}
+   */
+  const email = inputEmailElement.value;
+  
+  /** 
+   * Membuat variabel password untuk menyimpan niali password yang didapatkan saat button ditekan.
+   * @constant {string}
+   */
+  const password = inputPasswordElement.value;
+ 
+ 
+  /* Comment : Memastikan bahwa nilai email dan password sesuai dengan nilai yang tersimpan. */
+  if (email == expectedEmail && password == expectedPassword) {
+ 
+    /* Comment : Jika sesuai maka program akan berpindah ke halaman home. */
+    goToHome();
+ 
+  } else {
+ 
+    /* Comment : Namun jika tidak sesuai maka akan menampilkan informasi bahwa input salah. */
+    showPopUp();
+ 
+  }
 });
-
-
